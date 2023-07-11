@@ -1,3 +1,4 @@
+""" This code aims to plot horizontal bar figure in which each bar has two columns """
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -9,12 +10,12 @@ io = 'C:\\yourdata.xlsx'
 
 plt.rcParams['xtick.direction'] = 'in'   # inner xtick
 plt.rcParams['font.sans-serif'] = ['SimSun']  # display Chinese
-waste_day = 1.1
 
-# data = pd.read_excel()  # read data using pandas
+# data = pd.read_excel(io = io)  # read data using pandas
+# print(data)
 
-data_1= np.around(np.array(data), decimals=2)
-data_2= np.around(np.array(data), decimals=2)
+data_1= np.array(yourdata)  # fit your data into numpy array
+data_2= np.array(yourdata)  # fit your data into numpy array
 
 x = np.arange(len(labels))  # the label locations
 width = 0.9  # the width of the bars
